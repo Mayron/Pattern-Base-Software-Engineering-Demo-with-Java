@@ -1,0 +1,83 @@
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:00:26.7420194Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 15784, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 4.85 GBytes Available Memory, 4.882 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:17:47.7630892Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 13048, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 4.954 GBytes Available Memory, 4.986 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:17:49.2884364Z, 9, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.2607121) to change the state to LeaderElect in term 2. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:24:34.9797855Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 19228, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.434 GBytes Available Memory, 5.466 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:24:36.3930992Z, 8, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.3434335) to change the state to LeaderElect in term 3. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:26:09.4751787Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 1320, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.408 GBytes Available Memory, 5.439 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:26:11.1144460Z, 11, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.4048195) to change the state to LeaderElect in term 4. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:44:18.7206776Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 18168, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.587 GBytes Available Memory, 5.618 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:44:20.5547411Z, 10, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.3685483) to change the state to LeaderElect in term 5. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:45:05.4412945Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 9820, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.596 GBytes Available Memory, 5.627 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:45:07.0451768Z, 12, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.4758619) to change the state to LeaderElect in term 6. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:45:56.0156842Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 13684, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.604 GBytes Available Memory, 5.635 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:45:57.9990988Z, 4, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.3701952) to change the state to LeaderElect in term 7. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:46:33.0036867Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 2704, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.599 GBytes Available Memory, 5.631 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:46:34.5677914Z, 4, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.3434462) to change the state to LeaderElect in term 8. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:50:59.0470963Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 21480, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.56 GBytes Available Memory, 5.591 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:51:01.0496307Z, 11, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.4186538) to change the state to LeaderElect in term 9. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:51:42.2051634Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 20376, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.535 GBytes Available Memory, 5.566 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:51:43.9470673Z, 10, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.4002104) to change the state to LeaderElect in term 10. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T20:52:20.9378567Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 11336, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.578 GBytes Available Memory, 5.61 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T20:52:22.9591402Z, 11, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.3518239) to change the state to LeaderElect in term 11. (Election timeout:00:00:00.3000000)
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2020-05-10T21:02:02.7537450Z, 1, Operations, Server, Raven.Server.Program,  Build 42038, Version 4.2, SemVer 4.2.101, Commit 8dbf9e0
+ PID 2600, 64 bits, 8 Cores, Arch: X64
+ 15.961 GBytes Physical Memory, 5.576 GBytes Available Memory, 5.608 GBytes Calculated Available Memory, 0 Bytes Scratch Dirty Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+librvnpal Expected Version: 42013, librvnpal Current Version: 42013
+2020-05-10T21:02:04.7905292Z, 10, Operations, A, Raven.Server.Rachis.RachisConsensus, Took way too much time (00:00:00.3711360) to change the state to LeaderElect in term 12. (Election timeout:00:00:00.3000000)

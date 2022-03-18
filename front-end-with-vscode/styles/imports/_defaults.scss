@@ -1,0 +1,127 @@
+@import "colors";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Noto+Sans+JP:wght@400;700&display=swap");
+@import "vars";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: $black;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+  color: $light-orange;
+}
+
+h1 a {
+  color: $white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1 {
+  color: $white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h2 {
+  color: $dark-grey;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+h4,
+th {
+  color: $dark-grey;
+  font-size: 0.9rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+label {
+  user-select: none;
+
+  &[for] {
+    cursor: pointer;
+    margin-left: $item-spacing-small;
+  }
+}
+
+hr {
+  margin: $container-spacing-large 0;
+  border: none;
+  border-top: 1px solid $light-grey;
+}
+
+p {
+  line-height: 21px;
+}
+
+main {
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding-top: $page-spacing + 41px; // for banner height
+  display: flex;
+
+  aside {
+    width: 160px;
+  }
+
+  & > div {
+    flex: 1;
+  }
+
+  & > * {
+    margin-right: $page-spacing;
+  }
+
+  & > :last-child {
+    margin-right: 0;
+  }
+}
+
+button,
+input[type="button"] {
+  background: none;
+  outline: none;
+  user-select: none;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+th,
+td {
+  text-align: left;
+}

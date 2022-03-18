@@ -1,0 +1,24 @@
+@import "../imports/vars";
+@import "../imports/colors";
+
+.list {
+  margin-bottom: $section-spacing;
+
+  h3 {
+    padding-bottom: $container-spacing-small;
+    border-bottom: 1px solid $light-grey;
+  }
+
+  h3,
+  li {
+    margin-bottom: $item-spacing;
+  }
+
+  li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  section:not(:last-of-type) {
+    margin-bottom: $section-spacing;
+  }
+}

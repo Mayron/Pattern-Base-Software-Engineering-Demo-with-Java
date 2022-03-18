@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, initial-scale=1.0" />
+    <title>Payment | COMP62542</title>
+
+    <link rel="stylesheet" href="styles/site.min.css" />
+    <script type="text/javascript" src="./scripts/payment.js"></script>
+  </head>
+  <body>
+    <div role="banner" class="btn-test">
+      <header>
+        <h1>
+          <a href="index.html">COMP62542 Grocer Checkout System</a>
+        </h1>
+      </header>
+    </div>
+
+    <main>
+      <div id="paymentPage" class="page">
+        <header>
+          <h2>Choose a Payment Method</h2>
+        </header>
+        <section class="panel">
+          <table>
+            <thead>
+              <tr>
+                <th>Your credit or debit cards</th>
+                <th>Name on card</th>
+                <th>Expiry date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="card1">
+                <td>Visa/Delta/Electron ending in 1234</td>
+                <td>J Smith</td>
+                <td>12/2021</td>
+                <td>
+                  <button class="btn-secondary delete" data-target="card1">
+                    Delete
+                  </button>
+                  <button href="/delivery" class="btn-primary select" data-name="card1">
+                    Select
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+          <h3>Alternative Payment Methods</h3>
+          <ul id="alternativePayment">
+            <li>
+              <a href="" <img src="images/paypal-logo.png" title="PayPal" alt="PayPal" />
+            </li>
+            <li>
+              <img src="images/google-pay-logo.png" title="Google Pay" alt="Google Pay" />
+            </li>
+          </ul>
+        </section>
+        <a class="btn-secondary" href="checkout.html">Back to Cart</a>
+      </div>
+    </main>
+  </body>
+</html>

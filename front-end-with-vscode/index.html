@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, initial-scale=1.0" />
+    <title>Home | COMP62542</title>
+
+    <link rel="stylesheet" href="styles/site.min.css" />
+    <script type="text/javascript" src="./scripts/cart.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+  </head>
+  <body>
+    <div role="banner" class="btn-test">
+      <header>
+        <h1>
+          <a href="index.html">COMP62542 Grocer Checkout System</a>
+        </h1>
+      </header>
+    </div>
+    <main>
+      <aside id="filters" role="navigation">
+        <section class="list">
+          <h3>Filter by Category</h3>
+          <ul>
+            <li>
+              <input id="cat1" name="cat1" type="checkbox" />
+              <label for="cat1">Milk</label>
+            </li>
+            <li>
+              <input id="cat2" name="cat2" type="checkbox" />
+              <label for="cat2">Bread</label>
+            </li>
+            <li>
+              <input id="cat3" name="cat3" type="checkbox" />
+              <label for="cat3">Fruit</label>
+            </li>
+          </ul>
+        </section>
+        <section class="list">
+          <h3>Filter by Type</h3>
+          <ul>
+            <li>
+              <input id="type1" name="type1" type="checkbox" />
+              <label for="type1">Skimmed</label>
+            </li>
+            <li>
+              <input id="type3" name="type2" type="checkbox" />
+              <label for="type2">Semi-Skimmed</label>
+            </li>
+            <li>
+              <input id="type3" name="type3" type="checkbox" />
+              <label for="type3">Whole</label>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <div id="indexPage" class="page">
+        <header>
+          <h2>523 Products</h2>
+          <div id="search">
+            <input type="search" name="search" placeholder="Find a product" />
+            <button type="submit">
+              <img src="images/search-icon.png" class="icon" alt="Search" />
+            </button>
+          </div>
+        </header>
+        <div class="panel">
+          <ul id="products">
+            <li>
+              <img src="images/semi-skimmed-milk.jpg" title="Semi-Skimmed Milk" alt="Semi-Skimmed Milk" />
+              <h4>Semi-Skimmed Milk</h4>
+              <p><span>£1.19</span><span>48.5p per litre</span></p>
+              <button type="button" class="btn-primary add-to-cart" data-price="1.19" data-name="Semi-Skimmed Milk">
+                Add to Cart
+              </button>
+            </li>
+            <li>
+              <img src="images/semi-skimmed-milk.jpg" title="Semi-Skimmed Milk" alt="Semi-Skimmed Milk" />
+              <h4>Semi-Skimmed Milk</h4>
+              <p><span>£1.19</span><span>48.5p per litre</span></p>
+              <button type="button" class="btn-primary add-to-cart" data-price="1.19" data-name="Semi-Skimmed Milk">
+                Add to Cart
+              </button>
+            </li>
+            <li>
+              <img src="images/semi-skimmed-milk.jpg" title="Semi-Skimmed Milk" alt="Semi-Skimmed Milk" />
+              <h4>Semi-Skimmed Milk</h4>
+              <p>
+                <span>£1.19<span class="discount">50% off!</span></span
+                ><span>48.5p per litre</span>
+              </p>
+              <button
+                type="button"
+                class="btn-primary add-to-cart"
+                data-price="1.19"
+                data-discount="0.5"
+                data-name="Semi-Skimmed Milk"
+              >
+                Add to Cart
+              </button>
+            </li>
+            <li>
+              <img src="images/semi-skimmed-milk.jpg" title="Semi-Skimmed Milk" alt="Semi-Skimmed Milk" />
+              <h4>Semi-Skimmed Milk</h4>
+              <p><span>£1.19</span><span>48.5p per litre</span></p>
+              <button type="button" class="btn-primary add-to-cart" data-price="1.19" data-name="Semi-Skimmed Milk">
+                Add to Cart
+              </button>
+            </li>
+            <li>
+              <img src="images/semi-skimmed-milk.jpg" title="Semi-Skimmed Milk" alt="Semi-Skimmed Milk" />
+              <h4>Semi-Skimmed Milk</h4>
+              <p><span>£1.19</span><span>48.5p per litre</span></p>
+              <button type="button" class="btn-primary add-to-cart" data-price="1.19" data-name="Semi-Skimmed Milk">
+                Add to Cart
+              </button>
+            </li>
+            <li>
+              <img src="images/semi-skimmed-milk.jpg" title="Semi-Skimmed Milk" alt="Semi-Skimmed Milk" />
+              <h4>Semi-Skimmed Milk</h4>
+              <p><span>£1.19</span><span>48.5p per litre</span></p>
+              <button type="button" class="btn-primary add-to-cart" data-price="1.19" data-name="Semi-Skimmed Milk">
+                Add to Cart
+              </button>
+            </li>
+            <li>
+              <img src="images/semi-skimmed-milk.jpg" title="Semi-Skimmed Milk" alt="Semi-Skimmed Milk" />
+              <h4>Semi-Skimmed Milk</h4>
+              <p><span>£1.19</span><span>48.5p per litre</span></p>
+              <button type="button" class="btn-primary add-to-cart" data-price="1.19" data-name="Semi-Skimmed Milk">
+                Add to Cart
+              </button>
+            </li>
+            <li>
+              <img src="images/semi-skimmed-milk.jpg" title="Semi-Skimmed Milk" alt="Semi-Skimmed Milk" />
+              <h4>Semi-Skimmed Milk</h4>
+              <p><span>£1.19</span><span>48.5p per litre</span></p>
+              <button type="button" class="btn-primary add-to-cart" data-price="1.19" data-name="Semi-Skimmed Milk">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside id="cartSummary">
+        <section class="list">
+          <h3>Shopping Cart</h3>
+          <ul></ul>
+        </section>
+        <div>
+          <p>Total: <span id="total">£0.00</span></p>
+          <p>Savings: <span id="savings">£0.00</span></p>
+        </div>
+        <a role="button" class="btn-primary" href="/checkout.html">Checkout</a>
+      </aside>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, initial-scale=1.0" />
+    <title>Checkout | COMP62542</title>
+
+    <link rel="stylesheet" href="styles/site.min.css" />
+    <script type="text/javascript" src="./scripts/cart.js"></script>
+    <script type="text/javascript" src="./scripts/checkout.js"></script>
+  </head>
+  <body>
+    <div role="banner" class="btn-test">
+      <header>
+        <h1>
+          <a href="index.html">COMP62542 Grocer Checkout System</a>
+        </h1>
+      </header>
+    </div>
+    <main>
+      <div id="checkoutPage" class="page">
+        <header>
+          <h2>Shopping Cart</h2>
+        </header>
+        <table id="products" class="panel">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+        </table>
+
+        <section id="actions">
+          <a role="button" href="/index.html" class="btn-secondary">Continue Shopping</a>
+          <div id="proceed">
+            <div>
+              <p>Order total: £<span id="total">0.00</span></p>
+              <p>Savings: £<span id="savings">0.00</span></p>
+            </div>
+            <a href="/payment.html" class="btn-primary">Proceed to Payment</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

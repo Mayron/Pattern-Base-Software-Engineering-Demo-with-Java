@@ -1,0 +1,115 @@
+#checkoutPage {
+  margin: 0 $page-spacing;
+  width: 100%;
+  max-width: 900px;
+
+  & > header {
+    padding-bottom: $container-spacing-large;
+  }
+
+  #products {
+    width: 100%;
+  }
+
+  table {
+    td,
+    th {
+      &:not(:first-child) {
+        text-align: center;
+      }
+
+      &:not(:last-child) {
+        padding-right: $section-spacing;
+      }
+    }
+  }
+
+  tr:not(:last-child) td {
+    border-bottom: 1px solid $light-grey;
+  }
+
+  td {
+    padding: 20px 0;
+  }
+
+  th {
+    padding-bottom: $container-spacing-large;
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: $container-spacing-large;
+    }
+
+    p {
+      margin-bottom: 0;
+
+      &:last-of-type {
+        color: $dark-grey;
+        font-size: 12px;
+      }
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+  #actions {
+    margin-top: $section-spacing;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #applyCoupon {
+    margin-top: $container-spacing-large;
+
+    form {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-right: $item-spacing;
+      }
+    }
+  }
+
+  #breakdown {
+    margin: $section-spacing 0;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      width: 210px;
+
+      li {
+        display: flex;
+        justify-content: flex-end;
+        padding: $item-spacing-small 0;
+
+        hr {
+          width: 100%;
+          margin: 0;
+        }
+
+        &:last-of-type {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .minus {
+          color: $red;
+          font-weight: 600;
+        }
+
+        p + p {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}

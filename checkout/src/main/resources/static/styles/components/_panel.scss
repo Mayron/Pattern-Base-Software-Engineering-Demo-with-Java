@@ -1,0 +1,8 @@
+@import "../imports/colors";
+@import "../imports/vars";
+
+.panel {
+  border: 1px solid $light-grey;
+  border-radius: 4px;
+  padding: $container-spacing-large;
+}

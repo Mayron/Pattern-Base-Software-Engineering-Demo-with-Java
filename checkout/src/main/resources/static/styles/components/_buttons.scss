@@ -1,0 +1,33 @@
+.btn-primary {
+    padding: $container-spacing-small $container-spacing-large;
+    background-color: $light-orange;
+    border: 1px solid $dark-orange;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    color: $white;
+    font-weight: 600;
+    text-decoration: none;
+  
+    &:hover {
+      background-color: $dark-orange;
+    }
+  }
+
+  .btn-secondary {
+    padding: $container-spacing-small $container-spacing-large;
+    background-color: $white;
+    border: 1px solid $light-orange;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    color: $light-orange;
+    font-weight: 600;
+    text-decoration: none;
+  
+    &:hover {
+      background-color: $dark-orange;
+      border-color: $dark-orange;
+      color: $white;
+    }
+  }

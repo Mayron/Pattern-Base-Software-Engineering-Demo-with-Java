@@ -1,0 +1,1 @@
+{"Name":"Auto/Orders/ByorderId","Collections":["Orders"],"LockMode":0,"Priority":1,"MapFields":[{"Name":"orderId","Indexing":"Default","Aggregation":0,"Spatial":null,"HasSuggestions":false}]}

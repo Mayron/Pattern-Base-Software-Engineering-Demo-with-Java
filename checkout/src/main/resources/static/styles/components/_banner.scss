@@ -1,0 +1,15 @@
+@import "../imports/colors";
+@import "../imports/vars";
+
+div[role="banner"] {
+  background-color: $light-orange;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: $container-spacing 0;
+
+  header {
+    max-width: $page-max-width;
+    margin: 0 auto;
+  }
+}

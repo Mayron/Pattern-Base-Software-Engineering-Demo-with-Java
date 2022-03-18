@@ -1,0 +1,32 @@
+#products {
+  li,
+  td {
+    img {
+      width: 130px;
+      height: 120px;
+    }
+
+    h4 {
+      margin-bottom: $item-spacing-small;
+    }
+
+    p {
+      margin-bottom: $item-spacing;
+
+      & > span {
+        display: block;
+
+        &:first-of-type {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        &:last-of-type {
+          color: $dark-grey;
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

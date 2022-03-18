@@ -1,0 +1,38 @@
+#cartSummary {
+  width: 230px;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .btn-close::before {
+    content: "x";
+    padding: $container-spacing-small;
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  .btn-close {
+    color: $black;
+    &:hover {
+      color: $light-orange;
+    }
+  }
+
+  & > div {
+    margin-bottom: $section-spacing;
+
+    p {
+      color: $dark-grey;
+
+      span {
+        color: $black;
+        font-weight: 600;
+        margin-left: $item-spacing-small;
+      }
+    }
+  }
+}
