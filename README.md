@@ -55,8 +55,7 @@ This strategy helps provide flexible, reusable functionality without the client 
 ## 1.6	Observer Pattern
 In the checkout system, there exist four different concrete observers representing different Order object states: created, accepted, processing, and complete. These states represent how far into the journal the user’s order is. The TicketSubject extends the abstract BaseSubject by passing the Ticket domain object as its generic type. Similarly, any concrete observer can implement the abstract base observer class by providing its own generic type, and this dictates what subject it can observe. For example, only observers whose generic type is a Ticket can observe a Ticket observer.
  
-![Uploading image.png…]()
-
+![image](https://github.com/Mayron/Pattern-Base-Software-Engineering-Demo-with-Java/assets/5854995/094d2e73-38c7-44a2-a1a7-660ea45443fe)
 
 The abstract update function must be implemented by concrete observers to control what happens when they are notified of a state. The type of the state object must match the generic type of the observer and subject respectfully. The subject is simplistic in design because it does not care about the state; it only forwards the state to the observers who can either respond or ignore the change. The subject has no specialised control over what observer to call and will call all observers when a client passes the new state to the notifyObservers method. This implementation allows for the observers to have full control over the response and remains completely isolated away from the client class that passed the state to the subject. 
 
@@ -67,27 +66,27 @@ Two singletons are used in the checkout system: the coupons and database singlet
 
 The coupons singleton returns a fixed map of available coupons. These coupons should ideally be stored in the database, but the purpose of this singleton is to reduce the amount of database calls as much as possible. Singletons are often a good choice when an application requires access to the same data very frequently with infrequent updates to the data. For example, if an application’s pricing details for products rarely need updating but almost every web request requires access to that data, then instead of calling the database unnecessarily you can use a singleton to hold that data in memory. Then, if required, you could refresh the data with some other mechanism such as an API call that triggers a refresh method on the singleton.
 
-![image](https://github.com/Mayron/pattern-based-demo/assets/5854995/526bd763-ab03-4790-a53e-2cec9f880854)
+![image](https://github.com/Mayron/Pattern-Base-Software-Engineering-Demo-with-Java/assets/5854995/e3dd700f-9af6-4ccb-be44-167e1988bbd6)
 
 The Singleton pattern helps to simplify the creation of complex objects such as in the case of the database singleton which must start and configure RavenDB. This singleton also provides the benefit of hiding references to RavenDB and hence avoids unnecessary coupling of dependencies. One disadvantage is that static classes typically do not support interfaces, making them difficult to work with for dependency injection. However, they could perhaps provide a generic method for getting the singleton where that generic type is an interface. Then you would have a mixture of the singleton and factory pattern which would provide further reduced coupling.
 
 # 2.	Implementation Techniques
 The homepage relies on the mediator to handle rendering different states of the view depending on what view model was passed to it. Using the query and handling naming convention for mediator method names, it was easy to hook a controller action with the correct mediator method and trust it to deal with the orchestration of business components. These components would then handle the business logic and would leave the mediator to focus only on orchestration concerns.
 
-![image](https://github.com/Mayron/pattern-based-demo/assets/5854995/f4d8cc9d-5d0e-464f-9e77-4cecc416a525)
+![image](https://github.com/Mayron/Pattern-Base-Software-Engineering-Demo-with-Java/assets/5854995/5e9b1001-31e4-4e66-be73-bd9c6b8e5644)
 
 Each pattern and type of object has its own unique responsibility, allowing for a clear separation of concerns through fixed responsibility boundaries. The command pattern helped to enforce this further by using an explicit interface which restricted the command pattern from returning anything more than a Boolean value.
 
 The shopping cart builder is a core pattern used in this application. It handles the core business logic of how discounts are calculated. The results of these calculations are then bundled together in a shopping cart object returned to the command that initiated the build operation, allowing the client code to ignore all these details. This builder logic could then be easily tested and reused multiple times.
 
-![image](https://github.com/Mayron/pattern-based-demo/assets/5854995/b0575699-adad-469b-9d1d-2b5d3e3a6940)
+![image](https://github.com/Mayron/Pattern-Base-Software-Engineering-Demo-with-Java/assets/5854995/d3ca8f06-7544-4fed-944c-eedd02afa1b7)
 
 The final core feature is the use of the Observer pattern to progress the user through the payment and ordering journey. A simple JavaScript periodically calls a GET endpoint to get the current state of their order’s ticket. Each order is assigned a ticket, which contains the ticket’s state used by the observers. Once the payment and ordering process is complete, the ticket is assigned a completed status and the order is marked as paid for. The user is then greeted with a finished message and a button appears to allow them to return to the homepage.
 
-![image](https://github.com/Mayron/pattern-based-demo/assets/5854995/ffb1f0ac-f3e4-4c79-887e-6894440b36a7)
+![image](https://github.com/Mayron/Pattern-Base-Software-Engineering-Demo-with-Java/assets/5854995/b3a832dc-f0e7-4d17-8887-a017bf394817)
 
 The observers worked very well for monitoring state, but if the application was going to be used for real business purposes, you would benefit from allowing them to execute on a separate thread or process, because the observers currently only check the status when the user makes a request, which is not desirable. However, the application only caters for one user and thus is fit for purpose.
  
-![image](https://github.com/Mayron/pattern-based-demo/assets/5854995/e5066a5d-e98a-4715-9adc-9c1c90511b6b)
+![image](https://github.com/Mayron/Pattern-Base-Software-Engineering-Demo-with-Java/assets/5854995/04deaa87-32af-49cc-8d4d-60c7a4154230)
 
 A final note is the use of the payment handler factory used to implement isolated payment handling logic independent of what type of payment method the user selected. This helped keep the logical flow very systematised, which also makes the entire system adaptable to change. For example, if another payment method was needed in the future, you only need to create the payment handler class that implements the required interface enforced by the factory, add another switch-case branch and then nothing else will need to change as the system can execute its handler without needing to know what it does. Besides using interfaces, allowing specific components to own their own responsibility within the system helped to produce an intuitive flow of logic that is highly testable and easier to debug. If logic failed at any point during the journey, it was easy to know where to look. For example, the mediator should never persist any object and a controller should never have access to any components besides the mediator and should not have any domain objects. The patterns used help enforce that level of isolation and facilitated the development experience.
